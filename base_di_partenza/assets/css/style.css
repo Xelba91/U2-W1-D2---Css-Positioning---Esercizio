@@ -99,7 +99,7 @@ main {
 
 section {
   background-color: #e3e3e3;
-  padding: 1.5em 1em;
+  padding: 3.8em 1em;
   margin-bottom: 2em;
   position: relative;
 }
@@ -408,7 +408,7 @@ h1 span {
   right: 18px;
   bottom: 0;
   margin: -17px;
-  width: 517px;
+  width: 100%;
   opacity: 50%;
 }
 
@@ -421,9 +421,10 @@ h1 span {
 @media screen and (min-width: 700px) {
   .icons-container-top .margin:last-child .bg-icons {
     position: fixed;
-    bottom: 0;
-    right: 0;
+    bottom: 18px;
+    right: -8px;
     z-index: 99;
+    top: auto;
   }
 }
 
@@ -434,7 +435,7 @@ h1 span {
 
 .icons-container-top {
   position: fixed;
-  top: 0;
+  bottom: 0;
   right: 0;
   z-index: 99;
 }
@@ -443,7 +444,6 @@ div.icons-container-top i {
   color: rgb(66, 141, 239);
   font-size: 35px;
   padding: 5px;
-  border: 2px solid rgb(66, 141, 239);
   margin: 10px;
   text-align: center;
   cursor: pointer;
@@ -481,5 +481,22 @@ div p {
   top: -30px;
   right: 0px;
   font-size: 60px;
-  opacity: 60%;
+  opacity: 10%;
+}
+@media screen and (min-width: 700px) {
+  .icons-container-top .margin .bg-icons {
+    position: fixed;
+    top: 92px;
+    right: -8px;
+    z-index: 99;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .icons-container-top .margin:first-child .bg-icons {
+    position: fixed;
+    top: 14px;
+    right: -8px;
+    z-index: 99;
+  }
 }
